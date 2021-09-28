@@ -1,5 +1,5 @@
 const nav = document.querySelector(".link-items");
-const navBtn = document.querySelector(".menu-btn");
+const btn = document.querySelector(".menu-btn");
 const menuIcon = document.querySelector('.fas');
 const slideImage = document.querySelectorAll(".slide-image");
 const slideContainer = document.querySelector(".slide");
@@ -7,11 +7,9 @@ const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
 const navDots = document.querySelector(".nav-dots");
 
-let imageNum = slideImage.length;
-let slideWidth = slideImage[0].clientWidth;
-let currentSlide = 0;
 
-navBtn.addEventListener('click', () => {
+
+btn.addEventListener('click', () => {
     nav.classList.toggle('show');
     if (menuIcon.classList.contains('fa-bars')) {
         menuIcon.classList.remove('fa-bars');
@@ -21,9 +19,13 @@ navBtn.addEventListener('click', () => {
         menuIcon.classList.remove('fa-times');
         menuIcon.classList.add('fa-bars');
     }
-})
+});
 
 // Image Slide for Gallery Page
+
+let imageNum = slideImage.length;
+let slideWidth = slideImage[0].clientWidth;
+let currentSlide = 0;
 
 function init() {
     /*

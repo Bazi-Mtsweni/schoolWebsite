@@ -14,8 +14,8 @@ body{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden !important;
 
-    --primary-color: #ddbe69;
-    --text-color: #262626;
+    --primary-color: #ddbe69; /* Colour 1 Variable */
+    --text-color: #262626;  /* Colour 2 Variable */
 }
  .link{
      text-decoration: none;
@@ -40,7 +40,8 @@ body{
 
  /* -------------------------------------------BASIC STYLES --------------------------------------------------------------- */
 
- /* ------------------------------------------- NAV ------------------------------------------------------------------------*/
+ /*------------------------ Navigation --------------------------------*/
+
 .menu-btn{
     display: none;
 }
@@ -71,6 +72,8 @@ body{
  .link-item .link:hover, .link-item .link.active{
      opacity: 1;
  }
+
+ /*------------------------ !Navigation --------------------------------*/
 
  /*----------------------- Headers ----------------------------------*/
 header{
@@ -429,7 +432,7 @@ footer .copyrights{
     }
 
     .header-two h1{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         width: 100%;
         margin: 0rem;
         padding: .5rem;
