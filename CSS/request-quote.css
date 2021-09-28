@@ -1,0 +1,118 @@
+/* MAIN CONTENT */
+
+main{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.main-content{
+    width: 70%;
+}
+
+.side-nav{
+    width: 20%;
+    padding: 1rem;
+    position: relative;
+    color: var(--primary-color);
+}
+
+/* !MAIN CONTENT */
+
+
+
+.form-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+.form-heading h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.form-heading p{
+    font-size: 1.2rem;
+}
+.quote-form form{
+    width: 100%;
+    margin: auto;
+}
+.quote-form form label{
+    color: var(--primary-color);
+}
+.quote-form form input{
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--text-color);
+}
+.quote-form form select{
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: .5rem 1rem;
+    border: none;
+}
+.quote-form form select option{
+    background-color: #ffffff;
+    color: var(--primary-color);
+}
+.quote-form form .cta button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 1rem;
+    transition: background-color 300ms ease;
+}
+.quote-form form .cta button:hover{
+    background-color: rgb(180, 137, 57);
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 768px){
+    .side-nav{
+        width: 75%;
+    }
+
+    .form-heading{
+        width: 80%;
+    }
+
+    .form-heading h2{
+        font-size: 2rem;
+    }
+
+    .form-heading p{
+       font-size: .8rem; 
+    }
+}
+
+@media (max-width: 425px){
+
+    .main-content{
+        width: 100%;
+    }
+
+    .form-heading{
+        width: 100%;
+    }
+
+    .form-heading h2{
+        font-size: 1.8rem;
+    }
+    .form-heading p{
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+
+}
+
+/* RESPONSIVENESS */
